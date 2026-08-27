@@ -6,25 +6,57 @@
 <title>Page not found — Kafeero Proferious</title>
 <meta name="robots" content="noindex" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23b9791e'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' font-style='italic' font-weight='600' fill='%23fff' text-anchor='middle'%3EKP%3C/text%3E%3C/svg%3E" />
-<link rel="stylesheet" href="/css/style.css" />
-<script>try{var t=localStorage.getItem('kp-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<!-- Styles are inlined: this page is served for any missing path, at any depth,
+     so a relative stylesheet link cannot be resolved reliably. -->
+<style>
+  :root {
+    --bg: #faf8f3; --ink: #1c1915; --ink-soft: #6b6252; --line: #e5e0d5; --accent: #b9791e; --accent-ink: #fff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #131110; --ink: #f2ede3; --ink-soft: #a89c85; --line: #322c25; --accent: #e3a339; --accent-ink: #17130a; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+    background: var(--bg); color: var(--ink);
+    font-family: 'Manrope', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    line-height: 1.6; padding: clamp(1.25rem, 4vw, 3rem);
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; width: 100%; }
+  .eyebrow {
+    font-family: ui-monospace, 'SFMono-Regular', monospace;
+    font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent);
+  }
+  h1 {
+    font-family: 'Fraunces', ui-serif, Georgia, serif;
+    font-weight: 600; letter-spacing: -0.02em; line-height: 1.05;
+    font-size: clamp(2.5rem, 8vw, 4.5rem); margin: 0.5rem 0 1rem;
+  }
+  p { color: var(--ink-soft); max-width: 48ch; margin: 0 0 2rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+  a.btn {
+    display: inline-block; text-decoration: none; font-weight: 700; font-size: 0.9rem;
+    padding: 0.75rem 1.5rem; border-radius: 3px; border: 1px solid var(--accent);
+    transition: opacity 0.18s ease;
+  }
+  a.btn:hover { opacity: 0.85; }
+  .btn-primary { background: var(--accent); color: var(--accent-ink); }
+  .btn-ghost { color: var(--accent); }
+  footer { margin-top: 3.5rem; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px solid var(--line); padding-top: 1.25rem; }
+</style>
 </head>
 <body>
-<main id="main">
-  <section class="hero">
-    <div class="wrap">
-      <p class="hero__location">Error 404</p>
-      <h1 class="hero__name">Nothing here.</h1>
-      <p class="hero__sub">That page doesn't exist — it may have been renamed or never shipped. The work is all on the home page.</p>
-      <div class="hero__actions">
-        <a href="/" class="btn btn-primary">Back to the portfolio</a>
-        <a href="https://github.com/Profy256" target="_blank" rel="noopener" class="btn btn-ghost">GitHub profile</a>
-      </div>
+  <div class="wrap">
+    <span class="eyebrow">Error 404</span>
+    <h1>Nothing here.</h1>
+    <p>That page doesn't exist — it may have been renamed, or never shipped. The work is all on the home page.</p>
+    <div class="actions">
+      <a href="https://profy256.github.io/" class="btn btn-primary">Back to the portfolio</a>
+      <a href="https://github.com/Profy256" class="btn btn-ghost">GitHub profile</a>
     </div>
-  </section>
-</main>
-<footer class="site-footer">
-  <div class="wrap"><span>© 2026 Kafeero Proferious.</span><span>Built in Kampala, Uganda.</span></div>
-</footer>
+    <footer>© 2026 Kafeero Proferious · Built in Kampala, Uganda</footer>
+  </div>
 </body>
 </html>
