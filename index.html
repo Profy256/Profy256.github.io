@@ -3,12 +3,84 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Kafeero Proferious — Software Engineer</title>
-<meta name="description" content="Portfolio of Kafeero Proferious — Software Engineering student in Kampala, Uganda, building marketplaces, dev platforms, and AI-powered tools with Go, Java, Next.js and React Native." />
+<title>Kafeero Proferious — Software Engineer | Go, Next.js, AI Platforms</title>
+<meta name="description" content="Kafeero Proferious — software engineer in Kampala, Uganda. I build production marketplaces, AI platforms and developer tools with Go, TypeScript, Next.js, Python and PostgreSQL. 25 repositories, live deployments, open source." />
+<meta name="author" content="Kafeero Proferious" />
+<meta name="keywords" content="Kafeero Proferious, software engineer Uganda, Go developer, Next.js developer, AI platforms, full-stack engineer Kampala, backend engineer" />
+<link rel="canonical" href="https://profy256.github.io/" />
+<meta name="theme-color" content="#b9791e" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#131110" media="(prefers-color-scheme: dark)" />
+
+<!-- Open Graph / social -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://profy256.github.io/" />
+<meta property="og:title" content="Kafeero Proferious — Software Engineer" />
+<meta property="og:description" content="I build the systems markets run on. Production marketplaces, AI platforms and developer tools in Go, TypeScript, Next.js and Python." />
+<meta property="og:image" content="https://profy256.github.io/assets/img/kafeero-headshot.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kafeero Proferious — Software Engineer" />
+<meta name="twitter:description" content="I build the systems markets run on. Production marketplaces, AI platforms and developer tools." />
+<meta name="twitter:image" content="https://profy256.github.io/assets/img/kafeero-headshot.jpg" />
+
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='14' fill='%23b9791e'/%3E%3Ctext x='50' y='68' font-size='58' font-family='Georgia,serif' font-style='italic' font-weight='600' fill='%23fff' text-anchor='middle'%3EKP%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="css/style.css" />
+
+<script>
+  // Applied before paint to avoid a theme flash.
+  try {
+    var t = localStorage.getItem('kp-theme');
+    if (t) document.documentElement.setAttribute('data-theme', t);
+  } catch (e) {}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://profy256.github.io/#person",
+      "name": "Kafeero Proferious",
+      "givenName": "Proferious",
+      "familyName": "Kafeero",
+      "jobTitle": "Software Engineer",
+      "email": "mailto:profy256@gmail.com",
+      "telephone": "+256740686937",
+      "url": "https://profy256.github.io/",
+      "image": "https://profy256.github.io/assets/img/kafeero-headshot.jpg",
+      "description": "Software engineer building production marketplaces, AI platforms and developer tools with Go, TypeScript, Next.js, Python and PostgreSQL.",
+      "address": { "@type": "PostalAddress", "addressLocality": "Kampala", "addressCountry": "UG" },
+      "alumniOf": [
+        { "@type": "CollegeOrUniversity", "name": "Kampala International University" },
+        { "@type": "EducationalOrganization", "name": "Blessed Sacrament SS Kimanya" }
+      ],
+      "knowsLanguage": ["English", "Luganda", "German"],
+      "knowsAbout": ["Go", "Java", "TypeScript", "JavaScript", "Python", "Rust", "C", "Bash", "SQL",
+        "Next.js", "React", "React Native", "Spring Boot", "Gin", "PostgreSQL", "Docker", "Linux",
+        "Distributed Systems", "REST APIs", "AI Engineering", "Branding", "Digital Marketing"],
+      "sameAs": [
+        "https://github.com/Profy256",
+        "https://www.linkedin.com/in/kafeero-proferious-31785b3a7"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://profy256.github.io/#website",
+      "url": "https://profy256.github.io/",
+      "name": "Kafeero Proferious — Portfolio",
+      "inLanguage": "en",
+      "publisher": { "@id": "https://profy256.github.io/#person" }
+    }
+  ]
+}
+</script>
 </head>
 <body>
+
+<a href="#main" class="skip-link">Skip to content</a>
 
 <header class="site-header">
   <div class="wrap site-header__row">
@@ -16,48 +88,56 @@
       <img class="brand__mark" src="assets/img/kafeero-headshot.jpg" alt="" width="34" height="34" />
       Kafeero Proferious
     </a>
-    <nav class="main-nav" id="main-nav">
+    <nav class="main-nav" id="main-nav" aria-label="Primary">
       <a href="#about">About</a>
       <a href="#work">Work</a>
-      <a href="#toolkit">Toolkit</a>
+      <a href="#repos">Repositories</a>
+      <a href="#toolkit">Stack</a>
       <a href="#path">Path</a>
       <a href="#contact">Contact</a>
       <a href="assets/Kafeero-Proferious-CV.pdf" class="btn btn-ghost" download>Download CV</a>
     </nav>
-    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4.5h14M2 9h14M2 13.5h14"/></svg>
-    </button>
+    <div class="header-tools">
+      <button class="icon-btn" id="theme-toggle" aria-label="Switch colour theme" title="Switch colour theme">
+        <svg class="icon-sun" width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="10" cy="10" r="3.6"/><path d="M10 1.6v2M10 16.4v2M18.4 10h-2M3.6 10h-2M15.9 4.1l-1.4 1.4M5.5 14.5l-1.4 1.4M15.9 15.9l-1.4-1.4M5.5 5.5L4.1 4.1"/></svg>
+        <svg class="icon-moon" width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M17 11.7A7.4 7.4 0 0 1 8.3 3a7.4 7.4 0 1 0 8.7 8.7Z"/></svg>
+      </button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4.5h14M2 9h14M2 13.5h14"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
-<main>
+<main id="main">
 
   <!-- HERO -->
   <section class="hero" id="top">
     <div class="wrap">
       <div class="hero__top reveal">
         <div class="hero__mark">
-          <img src="assets/img/kafeero-headshot.jpg" alt="Kafeero Proferious" />
+          <img src="assets/img/kafeero-headshot.jpg" alt="Portrait of Kafeero Proferious" width="96" height="96" />
         </div>
         <div>
-          <p class="hero__location">Based in <b>Kampala, Uganda</b> · open to remote work worldwide</p>
+          <p class="hero__location"><span class="pulse" aria-hidden="true"></span> Based in <b>Kampala, Uganda</b> · open to remote work worldwide</p>
           <h1 class="hero__name">Kafeero Proferious</h1>
         </div>
       </div>
 
       <p class="hero__tagline reveal">I build the systems markets run on.</p>
-      <p class="hero__sub reveal">Software Engineering student at Kampala International University. Backend in Go and Java, frontend in Next.js, mobile in React Native — with a designer's eye from a parallel life in branding, copywriting and digital marketing.</p>
+      <p class="hero__sub reveal">Software engineer working across the whole stack — <strong>Go</strong> and <strong>Java</strong> on the backend, <strong>Next.js</strong> and <strong>TypeScript</strong> on the front, <strong>Python</strong> for data and AI, <strong>Linux</strong> and <strong>Docker</strong> underneath. Twenty-five repositories, real products in production, and a designer's eye from a parallel life in branding and digital marketing.</p>
 
       <div class="hero__actions reveal">
         <a href="#work" class="btn btn-primary">See the work</a>
+        <a href="https://github.com/Profy256" target="_blank" rel="noopener" class="btn btn-ghost">GitHub profile</a>
         <a href="#contact" class="btn btn-ghost">Get in touch</a>
       </div>
 
       <div class="stat-row reveal">
-        <div class="stat"><b>6</b><span>Platforms &amp; tools built</span></div>
-        <div class="stat"><b>3</b><span>Live in production</span></div>
-        <div class="stat"><b>1</b><span>Solo-built, end to end — Chicken City</span></div>
-        <div class="stat"><b>3</b><span>Languages spoken, 1 in progress</span></div>
+        <div class="stat"><b>25</b><span>Repositories built, no forks</span></div>
+        <div class="stat"><b>13</b><span>Products showcased below</span></div>
+        <div class="stat"><b>9</b><span>Languages shipped in production</span></div>
+        <div class="stat"><b>3</b><span>Spoken languages, 1 in progress</span></div>
       </div>
     </div>
   </section>
@@ -75,9 +155,9 @@
       <div class="about__grid">
         <p class="about__lede reveal">My work sits where backend engineering meets brand craft — because I trained in both, and I don't think a product should have to choose.</p>
         <div class="about__body reveal">
-          <p>I'm a Software Engineering student at <strong>Kampala International University</strong>, currently finishing my degree while building production platforms on the side. Alongside the engineering — <strong>Go, Java/Spring Boot, Next.js, React Native, Python, PostgreSQL</strong> — I trained in branding, copywriting and digital marketing through the Goheza program at the National Innovation Hub.</p>
-          <p>That combination shows up in how I build. <strong>Chicken City</strong>, a multi-vendor marketplace connecting poultry farmers to buyers, feed and machinery sellers, and vets, was designed, built and shipped by me alone — architecture, interface and brand included. It's the same instinct behind <strong>FindMyHome</strong> and <strong>Gincode</strong>: build the whole thing end to end, and make sure it looks like it was designed on purpose.</p>
-          <p>Before university, I served as <strong>Vice President of my school's ICT Club</strong>, running workshops and inter-school tech competitions — the first place I learned that shipping software and explaining it to people are two different skills, and a product needs both.</p>
+          <p>I'm a Software Engineering student at <strong>Kampala International University</strong>, finishing my degree while building and shipping production platforms on the side. The engineering runs deep and wide: <strong>Go</strong> and <strong>Java/Spring Boot</strong> services, <strong>Next.js</strong> and <strong>TypeScript</strong> front ends, <strong>React Native</strong> mobile apps, <strong>Python</strong> for data and machine learning, and <strong>Linux, Bash, Docker</strong> and <strong>PostgreSQL</strong> holding it all together.</p>
+          <p>Alongside that I trained in branding, copywriting and digital marketing through the <strong>Goheza program</strong> at the National Innovation Hub. That combination shows up in how I build. <strong>Chicken City</strong>, a multi-vendor marketplace connecting poultry farmers to buyers, feed and machinery sellers, and vets, was designed, built and shipped by me alone — architecture, interface and brand included. Same instinct behind <strong>FindMyHome</strong>, now serving real listings at findmyhomeuganda.com.</p>
+          <p>Lately most of my work is <strong>AI infrastructure</strong>: local model gateways, agent tooling, prompt-driven IDEs and prediction systems. Before university I served as <strong>Vice President of my school's ICT Club</strong>, running workshops and inter-school competitions — the first place I learned that shipping software and explaining it to people are two different skills, and a product needs both.</p>
         </div>
       </div>
     </div>
@@ -89,85 +169,267 @@
       <div class="section-head reveal">
         <div>
           <span class="eyebrow">Work</span>
-          <h2>Six platforms, three live right now.</h2>
+          <h2>Selected projects.</h2>
         </div>
+        <p class="section-head__note">Marketplaces, AI platforms and developer tools. Private products link to the live deployment; open-source work links to the code.</p>
       </div>
 
-      <div class="work-grid">
+      <div class="filters reveal" role="group" aria-label="Filter projects by category">
+        <button class="chip is-active" data-filter="all">All</button>
+        <button class="chip" data-filter="live">Live</button>
+        <button class="chip" data-filter="ai">AI &amp; Data</button>
+        <button class="chip" data-filter="platform">Platforms</button>
+        <button class="chip" data-filter="devtool">Developer Tools</button>
+        <button class="chip" data-filter="oss">Open Source</button>
+      </div>
 
-        <article class="card reveal">
+      <div class="work-grid" id="work-grid">
+
+        <!-- 1. FindMyHome -->
+        <article class="card card--feature reveal" data-cat="live platform">
           <div class="card__top">
             <span class="card__tag">Marketplace · Real Estate</span>
-            <span class="card__status">Live</span>
+            <span class="card__status is-live">Live in production</span>
           </div>
           <h3>FindMyHome Uganda</h3>
-          <p>Uganda's trusted digital real estate marketplace — verified sellers list, serious buyers discover homes, land, rentals, Airbnbs, lodges and apartments in one place, with zero guesswork.</p>
-          <span class="card__stack">Full-stack marketplace</span>
-          <a href="https://www.findmyhomeuganda.com" target="_blank" rel="noopener" class="card__link">
-            findmyhomeuganda.com
-            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg>
-          </a>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__top">
-            <span class="card__tag">Platform · Competitive Coding</span>
-            <span class="card__status">Live</span>
+          <p>Uganda's trusted digital real-estate marketplace — verified sellers list, serious buyers discover homes, land, rentals, Airbnbs, lodges and apartments in one place, with zero guesswork.</p>
+          <dl class="card__facts">
+            <div><dt>System</dt><dd>Five repositories — Go API, Next.js web client, admin dashboard, sub-admin console and a React Native mobile app.</dd></div>
+            <div><dt>My role</dt><dd>Architecture, backend, front end, mobile and brand. Built end to end.</dd></div>
+          </dl>
+          <span class="card__stack">Go · Next.js · TypeScript · PostgreSQL · Docker · Tailwind · React Native</span>
+          <div class="card__links">
+            <a href="https://www.findmyhomeuganda.com" target="_blank" rel="noopener" class="card__link">findmyhomeuganda.com<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+            <a href="https://findmyhome-delta.vercel.app" target="_blank" rel="noopener" class="card__link card__link--muted">web app<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+            <a href="https://findmyhome-admin.vercel.app" target="_blank" rel="noopener" class="card__link card__link--muted">admin console<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
           </div>
-          <h3>Gincode</h3>
-          <p>A hackathon and coding-competition platform, built Africa-first for global reach — where organisers run events and developers compete.</p>
-          <span class="card__stack">Web platform</span>
-          <a href="https://www.gincode.online" target="_blank" rel="noopener" class="card__link">
-            gincode.online
-            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg>
-          </a>
+          <span class="card__meta">Private source · 5 repositories</span>
         </article>
 
-        <article class="card reveal">
+        <!-- 2. Palius -->
+        <article class="card card--feature reveal" data-cat="ai oss">
           <div class="card__top">
-            <span class="card__tag">AI · Social Dashboard</span>
-            <span class="card__status">Live</span>
+            <span class="card__tag">AI · Social Automation</span>
+            <span class="card__status">Active development</span>
           </div>
           <h3>Palius</h3>
-          <p>An AI platform that runs a whole social media presence from one dashboard — for solo developers, startups without marketing teams, small marketing teams, businesses and influencers. One upload, adapted and published everywhere it fits.</p>
-          <span class="card__stack">AI · Automation</span>
-          <a href="https://palius-pi.vercel.app" target="_blank" rel="noopener" class="card__link">
-            palius-pi.vercel.app
-            <svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg>
-          </a>
+          <p>A desktop AI platform that runs an entire social-media presence from one dashboard — for solo developers, startups without marketing teams, small marketing teams, businesses and influencers. One upload, adapted and published everywhere it fits.</p>
+          <dl class="card__facts">
+            <div><dt>Scale</dt><dd>My largest active codebase — a Go service layer behind a Next.js desktop client, containerised end to end.</dd></div>
+            <div><dt>Integrations</dt><dd>Multi-provider AI routing across Gemini, OpenAI and Anthropic.</dd></div>
+          </dl>
+          <span class="card__stack">Go · TypeScript · Next.js · Docker Compose · Tailwind CSS</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/Palius" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source</span>
         </article>
 
-        <article class="card reveal">
+        <!-- 3. KP-WhatsApp -->
+        <article class="card reveal" data-cat="live ai platform oss">
           <div class="card__top">
-            <span class="card__tag">AI · Full-stack</span>
+            <span class="card__tag">AI · Multi-tenant SaaS</span>
+            <span class="card__status is-live">Live</span>
+          </div>
+          <h3>KP-WhatsApp</h3>
+          <p>A multi-tenant WhatsApp automation platform. Businesses connect their WhatsApp Business number by QR code and let AI handle customer conversations 24/7 — with per-tenant AI config, packages and referrals.</p>
+          <span class="card__stack">TypeScript · Next.js · Prisma · PostgreSQL · Docker</span>
+          <div class="card__links">
+            <a href="https://kp-whatsapp-frontend.vercel.app" target="_blank" rel="noopener" class="card__link">Live app<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+            <a href="https://github.com/Profy256/KP-WHATSAPP" target="_blank" rel="noopener" class="card__link card__link--muted">Source<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source</span>
+        </article>
+
+        <!-- 4. Katafa -->
+        <article class="card reveal" data-cat="ai oss">
+          <div class="card__top">
+            <span class="card__tag">AI · Sports Analytics</span>
+            <span class="card__status">Active development</span>
+          </div>
+          <h3>Katafa Soccer Predictions</h3>
+          <p>An AI-powered soccer prediction platform — a Go ingestion and modelling service over PostgreSQL, scheduled prediction ticks, and a Next.js front end. Ships with its own CI pipeline.</p>
+          <span class="card__stack">Go · PL/pgSQL · TypeScript · Next.js · GitHub Actions · Shell</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/katafasoccerpredictions" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source</span>
+        </article>
+
+        <!-- 5. Profy Glitch -->
+        <article class="card reveal" data-cat="devtool ai oss">
+          <div class="card__top">
+            <span class="card__tag">Developer Tool · AI Gateway</span>
+            <span class="card__status">Released</span>
+          </div>
+          <h3>Profy Glitch</h3>
+          <p>A local AI gateway that connects multiple AI providers to your development environment — talking to each one at the browser level through your own active login sessions, the same way you'd chat with them yourself. No API keys, no per-token billing.</p>
+          <span class="card__stack">Bash · Python · JavaScript · Linux</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/ProfyGlitch" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source</span>
+        </article>
+
+        <!-- 6. Drug Stock Predictor -->
+        <article class="card reveal" data-cat="ai oss">
+          <div class="card__top">
+            <span class="card__tag">AI · Healthcare</span>
+            <span class="card__status">Shipped</span>
+          </div>
+          <h3>Drug Stock Predictor</h3>
+          <p>A full-stack application for hospital pharmacies: role-based access control, an AI analytics dashboard, predictive stockout alerts and automated WhatsApp expiry notifications — so wards stop running dry without warning.</p>
+          <span class="card__stack">Python · JavaScript · Docker · Makefile</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/Drug-stock-predictor" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source · ★ 1</span>
+        </article>
+
+        <!-- 7. Profy-dev -->
+        <article class="card reveal" data-cat="devtool ai oss">
+          <div class="card__top">
+            <span class="card__tag">Developer Tool · AI IDE</span>
+            <span class="card__status">Prototype</span>
+          </div>
+          <h3>Profy-dev</h3>
+          <p>A browser-based, AI-powered IDE in the spirit of lovable.dev — you write a prompt, you get a working prototype instantly. Go orchestration behind a Next.js workspace.</p>
+          <span class="card__stack">Go · TypeScript · Next.js · Docker · Tailwind CSS</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/Profy-dev" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source</span>
+        </article>
+
+        <!-- 8. SocialPulse -->
+        <article class="card reveal" data-cat="ai oss">
+          <div class="card__top">
+            <span class="card__tag">AI · Video &amp; Campaigns</span>
             <span class="card__status">In development</span>
           </div>
           <h3>SocialPulse</h3>
-          <p>An open-source AI platform that helps marketing teams and creators generate strategic social campaigns and high-fidelity video ads — strategy with Gemini, video with Veo, plus an admin dashboard for analytics and usage.</p>
-          <span class="card__stack">Vite web SPA · web &amp; mobile scaffolds</span>
-        </article>
-
-        <article class="card reveal">
-          <div class="card__top">
-            <span class="card__tag">Dev Tool · AI Gateway</span>
-            <span class="card__status">Local tool</span>
+          <p>An open-source AI platform helping marketing teams and creators generate strategic campaigns and high-fidelity video ads — strategy with Gemini, video with Veo, plus an admin dashboard for usage and analytics.</p>
+          <span class="card__stack">TypeScript · Vite SPA · Next.js · Expo · Gemini · Veo</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/Socialpulse" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
           </div>
-          <h3>Profy Glitch</h3>
-          <p>A local AI gateway that connects multiple AI providers to your dev environment — talking to each one at the browser level, through your own active login sessions, the same way you'd chat with them yourself.</p>
-          <span class="card__stack">Dev tooling</span>
+          <span class="card__meta">Public source</span>
         </article>
 
-        <article class="card reveal">
+        <!-- 9. Chicken City -->
+        <article class="card reveal" data-cat="platform">
           <div class="card__top">
             <span class="card__tag">Marketplace · Solo Build</span>
             <span class="card__status">Shipped</span>
           </div>
           <h3>Chicken City</h3>
-          <p>A multi-vendor platform connecting poultry farmers to buyers, feed and machinery sellers, and vets and farm technicians offering their services. Designed and built end to end, solo.</p>
-          <span class="card__stack">Go (Gin) · JavaScript · HTML/CSS</span>
+          <p>A multi-vendor smart poultry platform connecting farmers to buyers, feed and machinery sellers, and vets and farm technicians offering their services. Designed, built and shipped end to end, solo.</p>
+          <span class="card__stack">Go (Gin) · TypeScript · Next.js · Docker · Tailwind CSS</span>
+          <span class="card__meta">Private source</span>
+        </article>
+
+        <!-- 10. Marzops -->
+        <article class="card reveal" data-cat="devtool oss">
+          <div class="card__top">
+            <span class="card__tag">Operations · Dashboard</span>
+            <span class="card__status">Internal tool</span>
+          </div>
+          <h3>Marzops</h3>
+          <p>A dashboard for monitoring the financial performance of my online businesses, websites and apps through the MarzPay payment gateway — plus a single place to watch the admin panels behind them.</p>
+          <span class="card__stack">TypeScript · JavaScript · MarzPay API</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/Marzops" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source</span>
+        </article>
+
+        <!-- 11. profycode -->
+        <article class="card reveal" data-cat="devtool oss">
+          <div class="card__top">
+            <span class="card__tag">Developer Tool · Agent Tooling</span>
+            <span class="card__status">Released</span>
+          </div>
+          <h3>profycode</h3>
+          <p>An engineering constitution — a portable skill set that makes AI coding agents ship production-grade code without being reminded every time. Installed as shell tooling into an agent's working environment.</p>
+          <span class="card__stack">Bash · Linux · Agent tooling</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/profycode" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source · ★ 1</span>
+        </article>
+
+        <!-- 12. Kronos -->
+        <article class="card reveal" data-cat="ai oss">
+          <div class="card__top">
+            <span class="card__tag">Research · Foundation Models</span>
+            <span class="card__status">Planned</span>
+          </div>
+          <h3>Kronos</h3>
+          <p>Research track toward a foundation model for financial language — currently a reserved workspace while I study existing financial-market foundation models and scope the data pipeline.</p>
+          <span class="card__stack">Python · Machine learning</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/kronos" target="_blank" rel="noopener" class="card__link">Repository<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public · not yet started</span>
+        </article>
+
+        <!-- 13. This site -->
+        <article class="card reveal" data-cat="oss">
+          <div class="card__top">
+            <span class="card__tag">Web · Personal Site</span>
+            <span class="card__status is-live">Live</span>
+          </div>
+          <h3>This portfolio</h3>
+          <p>Hand-built, dependency-free and deliberately fast — semantic HTML, a single stylesheet, ~40 lines of JavaScript, structured data for search engines, and no build step at all. Source is public.</p>
+          <span class="card__stack">HTML · CSS · Vanilla JS · JSON-LD · GitHub Pages</span>
+          <div class="card__links">
+            <a href="https://github.com/Profy256/Profy256.github.io" target="_blank" rel="noopener" class="card__link">Source on GitHub<svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10L10 4M5 4h5v5"/></svg></a>
+          </div>
+          <span class="card__meta">Public source</span>
         </article>
 
       </div>
+      <p class="work-empty" id="work-empty" hidden>No projects in that category.</p>
+    </div>
+  </section>
+
+  <!-- REPO INDEX -->
+  <section id="repos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <div>
+          <span class="eyebrow">Repositories</span>
+          <h2>The full index.</h2>
+        </div>
+        <p class="section-head__note">Every repository I own and authored — forks excluded. Private products are listed with their live deployment where one exists.</p>
+      </div>
+
+      <div class="table-scroll reveal">
+        <table class="repo-table">
+          <caption class="sr-only">Complete index of authored repositories, with primary language, visibility and links</caption>
+          <thead>
+            <tr><th scope="col">Repository</th><th scope="col">What it is</th><th scope="col">Primary stack</th><th scope="col">Access</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row"><a href="https://github.com/Profy256/Palius" target="_blank" rel="noopener">Palius</a></th><td>AI platform running a full social-media presence from one desktop dashboard</td><td>Go · TypeScript · Docker</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/katafasoccerpredictions" target="_blank" rel="noopener">katafasoccerpredictions</a></th><td>AI-powered soccer prediction platform with scheduled model runs</td><td>Go · PL/pgSQL · Next.js</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/ProfyGlitch" target="_blank" rel="noopener">ProfyGlitch</a></th><td>Local AI gateway bridging multiple providers into your dev environment</td><td>Bash · Python · JS</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/KP-WHATSAPP" target="_blank" rel="noopener">KP-WHATSAPP</a></th><td>Multi-tenant WhatsApp automation SaaS with AI conversation handling</td><td>TypeScript · Prisma · Docker</td><td><span class="pill pill--pub">Public</span> <a class="pill pill--live" href="https://kp-whatsapp-frontend.vercel.app" target="_blank" rel="noopener">Live</a></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/Profy-dev" target="_blank" rel="noopener">Profy-dev</a></th><td>Browser-based AI IDE that turns a prompt into a working prototype</td><td>Go · Next.js · Docker</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/Socialpulse" target="_blank" rel="noopener">Socialpulse</a></th><td>Open-source AI campaign strategist and video-ad studio</td><td>TypeScript · Vite · Gemini</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/Drug-stock-predictor" target="_blank" rel="noopener">Drug-stock-predictor</a></th><td>Pharmacy stockout prediction and expiry alerting for hospitals</td><td>Python · JavaScript · Docker</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/Marzops" target="_blank" rel="noopener">Marzops</a></th><td>Financial monitoring dashboard across my products and payment gateway</td><td>TypeScript · JavaScript</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/profycode" target="_blank" rel="noopener">profycode</a></th><td>Engineering constitution and skill set for AI coding agents</td><td>Bash · Linux</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/kronos" target="_blank" rel="noopener">kronos</a></th><td>Research workspace for a financial-language foundation model</td><td>Python</td><td><span class="pill pill--pub">Public</span></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/Profy256.github.io" target="_blank" rel="noopener">Profy256.github.io</a></th><td>This portfolio and CV site, hand-built with no build step</td><td>HTML · CSS · JS</td><td><span class="pill pill--pub">Public</span> <a class="pill pill--live" href="https://profy256.github.io" target="_blank" rel="noopener">Live</a></td></tr>
+            <tr><th scope="row"><a href="https://github.com/Profy256/myportfolio" target="_blank" rel="noopener">myportfolio</a></th><td>Project-pages mirror of the portfolio site</td><td>HTML · CSS · JS</td><td><span class="pill pill--pub">Public</span> <a class="pill pill--live" href="https://profy256.github.io/myportfolio/" target="_blank" rel="noopener">Live</a></td></tr>
+            <tr><th scope="row">findmyhome</th><td>Multi-vendor real-estate marketplace — core platform</td><td>Go · Next.js · PostgreSQL</td><td><span class="pill pill--priv">Private</span> <a class="pill pill--live" href="https://www.findmyhomeuganda.com" target="_blank" rel="noopener">Live</a></td></tr>
+            <tr><th scope="row">findmyhome-web</th><td>Web client for the FindMyHome marketplace</td><td>TypeScript · Next.js · Docker</td><td><span class="pill pill--priv">Private</span> <a class="pill pill--live" href="https://findmyhome-delta.vercel.app" target="_blank" rel="noopener">Live</a></td></tr>
+            <tr><th scope="row">findmyhome-admin</th><td>Admin dashboard controlling the FindMyHome platform</td><td>TypeScript · Next.js · Docker</td><td><span class="pill pill--priv">Private</span> <a class="pill pill--live" href="https://findmyhome-admin.vercel.app" target="_blank" rel="noopener">Live</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="repos__foot reveal">Further private repositories — <b>findmyhome-api</b>, <b>findmyhome-mobile</b>, <b>findmyhome-subadmin</b>, <b>ChickenCity</b>, <b>sefadev</b>, <b>campuslibrary</b>, <b>RankNest</b>, <b>Sennak</b> and <b>PROFY-AI-MVP</b> — are closed source without a public deployment. Happy to walk through any of them on a call.</p>
     </div>
   </section>
 
@@ -176,9 +438,10 @@
     <div class="wrap">
       <div class="section-head reveal">
         <div>
-          <span class="eyebrow">Toolkit</span>
+          <span class="eyebrow">Stack</span>
           <h2>What I build with.</h2>
         </div>
+        <p class="section-head__note">Everything listed here appears in shipped code in the repositories above.</p>
       </div>
 
       <div class="toolkit-grid">
@@ -187,18 +450,37 @@
           <p class="tag-list">
             <span>Go</span><span class="sep">✦</span>
             <span>Java</span><span class="sep">✦</span>
+            <span>TypeScript</span><span class="sep">✦</span>
             <span>JavaScript</span><span class="sep">✦</span>
             <span>Python</span><span class="sep">✦</span>
-            <span>C</span>
+            <span>Rust</span><span class="sep">✦</span>
+            <span>C</span><span class="sep">✦</span>
+            <span>Bash / Shell</span><span class="sep">✦</span>
+            <span>SQL &amp; PL/pgSQL</span>
           </p>
         </div>
 
         <div class="toolkit-group reveal">
-          <h3>Web &amp; Mobile</h3>
+          <h3>Backend &amp; APIs</h3>
           <p class="tag-list">
-            <span>Next.js</span><span class="sep">✦</span>
             <span>Gin (Go)</span><span class="sep">✦</span>
             <span>Spring Boot</span><span class="sep">✦</span>
+            <span>Node.js</span><span class="sep">✦</span>
+            <span>Express</span><span class="sep">✦</span>
+            <span>REST</span><span class="sep">✦</span>
+            <span>Prisma</span><span class="sep">✦</span>
+            <span>Auth &amp; RBAC</span>
+          </p>
+        </div>
+
+        <div class="toolkit-group reveal">
+          <h3>Frontend &amp; Mobile</h3>
+          <p class="tag-list">
+            <span>Next.js</span><span class="sep">✦</span>
+            <span>React</span><span class="sep">✦</span>
+            <span>Vite</span><span class="sep">✦</span>
+            <span>Tailwind CSS</span><span class="sep">✦</span>
+            <span>Semantic HTML &amp; CSS</span><span class="sep">✦</span>
             <span>React Native (Expo)</span>
           </p>
         </div>
@@ -206,7 +488,37 @@
         <div class="toolkit-group reveal">
           <h3>Data</h3>
           <p class="tag-list">
-            <span>PostgreSQL</span>
+            <span>PostgreSQL</span><span class="sep">✦</span>
+            <span>PL/pgSQL</span><span class="sep">✦</span>
+            <span>Schema design &amp; migrations</span><span class="sep">✦</span>
+            <span>Predictive analytics</span>
+          </p>
+        </div>
+
+        <div class="toolkit-group reveal">
+          <h3>Linux, DevOps &amp; Platform</h3>
+          <p class="tag-list">
+            <span>Linux</span><span class="sep">✦</span>
+            <span>Bash scripting</span><span class="sep">✦</span>
+            <span>Docker</span><span class="sep">✦</span>
+            <span>Docker Compose</span><span class="sep">✦</span>
+            <span>GitHub Actions (CI)</span><span class="sep">✦</span>
+            <span>Make</span><span class="sep">✦</span>
+            <span>Git</span><span class="sep">✦</span>
+            <span>Vercel</span><span class="sep">✦</span>
+            <span>GitHub Pages</span>
+          </p>
+        </div>
+
+        <div class="toolkit-group reveal">
+          <h3>AI Engineering</h3>
+          <p class="tag-list">
+            <span>Gemini &amp; Veo</span><span class="sep">✦</span>
+            <span>OpenAI API</span><span class="sep">✦</span>
+            <span>Anthropic API</span><span class="sep">✦</span>
+            <span>Multi-provider gateways</span><span class="sep">✦</span>
+            <span>Prompt engineering</span><span class="sep">✦</span>
+            <span>Agent tooling</span>
           </p>
         </div>
 
@@ -255,16 +567,17 @@
       <div class="timeline">
 
         <div class="timeline-item reveal">
-          <div class="timeline-item__meta"><time>PRESENT — 2026</time></div>
+          <div class="timeline-item__meta"><time datetime="2026">PRESENT — 2026</time></div>
           <h3>B.Sc. Software Engineering</h3>
           <p class="timeline-item__org">Kampala International University — Kampala, Uganda</p>
           <ul>
             <li>Currently pursuing a degree in Software Engineering.</li>
+            <li>Building and shipping production platforms alongside coursework.</li>
           </ul>
         </div>
 
         <div class="timeline-item reveal">
-          <div class="timeline-item__meta"><time>MAR – APR 2026</time></div>
+          <div class="timeline-item__meta"><time datetime="2026-03">MAR – APR 2026</time></div>
           <h3>Goheza Digital Marketing Training Program</h3>
           <p class="timeline-item__org">National Innovation Hub</p>
           <ul>
@@ -275,7 +588,7 @@
         </div>
 
         <div class="timeline-item reveal">
-          <div class="timeline-item__meta"><time>2023 – 2024</time></div>
+          <div class="timeline-item__meta"><time datetime="2023">2023 – 2024</time></div>
           <h3>Vice President — ICT Club</h3>
           <p class="timeline-item__org">Blessed Sacrament SS Kimanya, A-Level</p>
           <ul>
@@ -286,7 +599,7 @@
         </div>
 
         <div class="timeline-item reveal">
-          <div class="timeline-item__meta"><time>2023 – 2024</time></div>
+          <div class="timeline-item__meta"><time datetime="2023">2023 – 2024</time></div>
           <h3>A-Level Certificate</h3>
           <p class="timeline-item__org">Blessed Sacrament SS Kimanya — Masaka, Uganda</p>
           <ul>
@@ -305,27 +618,29 @@
   <div class="wrap">
     <span class="eyebrow">Contact</span>
     <h2 class="contact__title">Let's build<br>something.</h2>
+    <p class="contact__lede">Open to remote software engineering roles, contract work and collaborations. I reply to every message.</p>
 
     <div class="contact__grid">
       <div>
         <a href="mailto:profy256@gmail.com" class="contact__email">profy256@gmail.com</a>
         <ul class="contact__list">
           <li><b>Phone</b><a href="tel:+256740686937">+256 740 686 937</a></li>
-          <li><b>Location</b><span>Kampala, Uganda</span></li>
+          <li><b>Location</b><span>Kampala, Uganda · UTC+3</span></li>
+          <li><b>Availability</b><span>Open to remote work worldwide</span></li>
         </ul>
       </div>
 
       <div class="contact__side">
         <a href="https://github.com/Profy256" target="_blank" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.72-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.67.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.96 0-.87.31-1.59.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.55.82 1.27.82 2.14 0 3.08-1.88 3.75-3.66 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.49c-2.23.48-2.7-1.07-2.7-1.07-.36-.93-.89-1.17-.89-1.17-.72-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.71 1.22 1.87.87 2.33.67.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.96 0-.87.31-1.59.82-2.14-.08-.2-.36-1.02.08-2.13 0 0 .67-.21 2.2.82a7.5 7.5 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.11.16 1.93.08 2.13.51.55.82 1.27.82 2.14 0 3.08-1.88 3.75-3.66 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg>
           GitHub — Profy256
         </a>
         <a href="https://www.linkedin.com/in/kafeero-proferious-31785b3a7" target="_blank" rel="noopener">
-          <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.15C0 .51.53 0 1.19 0h13.62C15.47 0 16 .51 16 1.15v13.7c0 .64-.53 1.15-1.19 1.15H1.19C.53 16 0 15.49 0 14.85V1.15ZM4.75 13.4V6.2H2.4v7.2h2.35Zm-1.17-8.2c.82 0 1.33-.54 1.33-1.22C4.9 3.3 4.4 2.77 3.6 2.77c-.8 0-1.33.53-1.33 1.21 0 .68.51 1.22 1.3 1.22h.01ZM6.4 13.4h2.35V9.38c0-.22.02-.43.08-.59.17-.43.57-.88 1.24-.88.87 0 1.22.67 1.22 1.64V13.4h2.35V9.27c0-2.18-1.16-3.19-2.71-3.19-1.25 0-1.8.7-2.11 1.19h.02V6.2H6.4c.03.66 0 7.2 0 7.2Z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M0 1.15C0 .51.53 0 1.19 0h13.62C15.47 0 16 .51 16 1.15v13.7c0 .64-.53 1.15-1.19 1.15H1.19C.53 16 0 15.49 0 14.85V1.15ZM4.75 13.4V6.2H2.4v7.2h2.35Zm-1.17-8.2c.82 0 1.33-.54 1.33-1.22C4.9 3.3 4.4 2.77 3.6 2.77c-.8 0-1.33.53-1.33 1.21 0 .68.51 1.22 1.3 1.22h.01ZM6.4 13.4h2.35V9.38c0-.22.02-.43.08-.59.17-.43.57-.88 1.24-.88.87 0 1.22.67 1.22 1.64V13.4h2.35V9.27c0-2.18-1.16-3.19-2.71-3.19-1.25 0-1.8.7-2.11 1.19h.02V6.2H6.4c.03.66 0 7.2 0 7.2Z"/></svg>
           LinkedIn — kafeero-proferious
         </a>
         <a href="assets/Kafeero-Proferious-CV.pdf" download>
-          <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M8 1v9m0 0L5 7m3 3l3-3M2 12v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2"/></svg>
+          <svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M8 1v9m0 0L5 7m3 3l3-3M2 12v2a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1v-2"/></svg>
           Download CV (PDF)
         </a>
       </div>
@@ -336,7 +651,7 @@
 <footer class="site-footer">
   <div class="wrap">
     <span>© 2026 Kafeero Proferious.</span>
-    <span>Built in Kampala, Uganda.</span>
+    <span>Built in Kampala, Uganda. No frameworks, no build step.</span>
   </div>
 </footer>
 

@@ -1,25 +1,18 @@
 <div align="center">
 
-<img src="assets/img/kafeero-fullbody.jpg" alt="Kafeero Proferious" width="180" style="border-radius: 50%; border: 4px solid #b9791e; object-fit: cover; object-position: top; box-shadow: 0 8px 30px rgba(0,0,0,0.25);" />
+<img src="assets/img/kafeero-fullbody.jpg" alt="Kafeero Proferious" width="180" style="border-radius: 50%; border: 4px solid #b9791e; object-fit: cover; object-position: top;" />
 
-<h1 style="margin: 18px 0 6px; font-family: Georgia, serif; font-weight: 600; color: #1a1a1a;">Kafeero Proferious</h1>
+# Kafeero Proferious
 
-<p style="margin: 0; font-size: 1.05rem; color: #555;"><em>I build the systems markets run on.</em></p>
+*I build the systems markets run on.*
 
-<p style="margin: 10px 0 4px; color: #555;">
-Software Engineer &amp; Brand-minded Builder · Kampala, Uganda · Open to remote work worldwide
-</p>
+Software Engineer · Kampala, Uganda · Open to remote work worldwide
 
-<p style="margin: 14px 0 0;">
-<a href="mailto:profy256@gmail.com" style="display: inline-block; background: #b9791e; color: #fff; padding: 10px 22px; border-radius: 6px; text-decoration: none; font-weight: 600; margin: 4px;">Email Me</a>
-<a href="assets/Kafeero-Proferious-CV.pdf" style="display: inline-block; border: 2px solid #b9791e; color: #b9791e; padding: 8px 20px; border-radius: 6px; text-decoration: none; font-weight: 600; margin: 4px;">Download CV</a>
-</p>
-
-<p style="margin: 14px 0 0; font-size: 0.9rem;">
-<a href="https://github.com/Profy256" style="color:#0366d6; text-decoration:none;">GitHub</a> ·
-<a href="https://www.linkedin.com/in/kafeero-proferious-31785b3a7" style="color:#0366d6; text-decoration:none;">LinkedIn</a> ·
-<a href="https://profy256.github.io" style="color:#0366d6; text-decoration:none;">Live Portfolio</a>
-</p>
+<a href="https://profy256.github.io"><b>Live portfolio</b></a> ·
+<a href="mailto:profy256@gmail.com">Email</a> ·
+<a href="https://github.com/Profy256">GitHub</a> ·
+<a href="https://www.linkedin.com/in/kafeero-proferious-31785b3a7">LinkedIn</a> ·
+<a href="assets/Kafeero-Proferious-CV.pdf">CV (PDF)</a>
 
 </div>
 
@@ -27,48 +20,70 @@ Software Engineer &amp; Brand-minded Builder · Kampala, Uganda · Open to remot
 
 ## About
 
-I'm a **Software Engineering student at Kampala International University** building production platforms on the side. My work sits where **backend engineering meets brand craft** — I trained in both, and I don't think a product should have to choose.
+I'm a **Software Engineering student at Kampala International University** building and shipping production platforms on the side. My work sits where **backend engineering meets brand craft** — I trained in both, and I don't think a product should have to choose.
 
-From **Go, Java/Spring Boot, Next.js, React Native and PostgreSQL** to branding, copywriting and digital marketing (Goheza program, National Innovation Hub), I design, build and ship entire products end to end — architecture, interface and brand included.
+Go and Java services, Next.js and TypeScript front ends, React Native mobile, Python for data and AI, and Linux, Bash, Docker and PostgreSQL underneath. Alongside the engineering I trained in branding, copywriting and digital marketing through the Goheza program at the National Innovation Hub.
 
-## Highlights
+**25 repositories · 9 languages shipped · live products in production.**
 
-| Metric | Number |
-| --- | --- |
-| Platforms &amp; tools built | **6** |
-| Live in production | **3** |
-| Solo-built, end to end | **Chicken City** |
-| Languages spoken | **3, 1 in progress** |
+## Selected work
 
-## Projects
-
-| Project | Description | Stack | Status |
+| Project | What it is | Stack | Links |
 | --- | --- | --- | --- |
-| **FindMyHome Uganda** — [findmyhomeuganda.com](https://www.findmyhomeuganda.com) | Trusted digital real estate marketplace: homes, land, rentals, Airbnbs, lodges and apartments. | Full-stack marketplace | 🟢 Live |
-| **Gincode** — [gincode.online](https://www.gincode.online) | Hackathon &amp; coding-competition platform, built Africa-first for global reach. | Web platform | 🟢 Live |
-| **Palius** — [palius-pi.vercel.app](https://palius-pi.vercel.app) | AI platform that runs a social media presence from one dashboard. | AI · Automation | 🟢 Live |
-| **SocialPulse** | Open-source AI platform for strategic social campaigns and high-fidelity video ads. | Vite SPA · web &amp; mobile | 🔵 In development |
-| **Profy Glitch** | Local AI gateway connecting multiple AI providers to your dev environment. | Dev tooling | ⚪ Local tool |
-| **Chicken City** | Multi-vendor marketplace connecting poultry farmers to buyers, sellers and vets. Built solo. | Go (Gin) · JS · HTML/CSS | ✅ Shipped |
+| **FindMyHome Uganda** | Multi-vendor real-estate marketplace — Go API, Next.js web, admin console, sub-admin and React Native mobile across 5 repos. | Go · Next.js · PostgreSQL · Docker · React Native | 🟢 [findmyhomeuganda.com](https://www.findmyhomeuganda.com) · [web](https://findmyhome-delta.vercel.app) · [admin](https://findmyhome-admin.vercel.app) |
+| **Palius** | Desktop AI platform running a whole social-media presence from one dashboard. Multi-provider AI routing. | Go · TypeScript · Next.js · Docker | [Source](https://github.com/Profy256/Palius) |
+| **KP-WhatsApp** | Multi-tenant WhatsApp automation SaaS — QR onboarding, per-tenant AI config, packages and referrals. | TypeScript · Prisma · PostgreSQL · Docker | 🟢 [Live](https://kp-whatsapp-frontend.vercel.app) · [Source](https://github.com/Profy256/KP-WHATSAPP) |
+| **Katafa Soccer Predictions** | AI soccer prediction platform with scheduled model runs and its own CI pipeline. | Go · PL/pgSQL · Next.js · GitHub Actions | [Source](https://github.com/Profy256/katafasoccerpredictions) |
+| **Profy Glitch** | Local AI gateway bridging multiple providers into your dev environment at the browser-session level. | Bash · Python · JavaScript · Linux | [Source](https://github.com/Profy256/ProfyGlitch) |
+| **Drug Stock Predictor** | Pharmacy stockout prediction, RBAC and automated WhatsApp expiry alerts for hospitals. | Python · JavaScript · Docker | [Source](https://github.com/Profy256/Drug-stock-predictor) |
+| **Profy-dev** | Browser-based AI IDE that turns a prompt into a working prototype. | Go · Next.js · Docker | [Source](https://github.com/Profy256/Profy-dev) |
+| **SocialPulse** | Open-source AI campaign strategist and video-ad studio (Gemini + Veo). | TypeScript · Vite · Expo | [Source](https://github.com/Profy256/Socialpulse) |
+| **Chicken City** | Multi-vendor smart poultry platform. Designed, built and shipped solo. | Go (Gin) · Next.js · Docker | Private |
+| **Marzops** | Financial monitoring dashboard across my products and payment gateway. | TypeScript · MarzPay API | [Source](https://github.com/Profy256/Marzops) |
+| **profycode** | Engineering constitution that makes AI coding agents ship production-grade code. | Bash · Linux | [Source](https://github.com/Profy256/profycode) |
 
-## Toolkit
+The [full repository index](https://profy256.github.io/#repos) is on the site.
 
-**Languages:** Go · Java · JavaScript · Python · C
+## Stack
 
-**Web &amp; Mobile:** Next.js · Gin (Go) · Spring Boot · React Native (Expo)
+**Languages** — Go · Java · TypeScript · JavaScript · Python · Rust · C · Bash/Shell · SQL & PL/pgSQL
 
-**Data:** PostgreSQL
+**Backend & APIs** — Gin (Go) · Spring Boot · Node.js · Express · REST · Prisma · Auth & RBAC
 
-**Design &amp; Marketing:** Branding · Graphic Design · Copywriting · Social Campaigns · Video &amp; Photo Editing
+**Frontend & Mobile** — Next.js · React · Vite · Tailwind CSS · Semantic HTML/CSS · React Native (Expo)
 
-**Ways of Working:** Leadership · Communication · Problem-Solving · Time Management · Adaptability
+**Data** — PostgreSQL · PL/pgSQL · Schema design & migrations · Predictive analytics
 
-**Languages Spoken:** English (Fluent) · Luganda (Fluent) · German (Learning)
+**Linux, DevOps & Platform** — Linux · Bash scripting · Docker · Docker Compose · GitHub Actions · Make · Git · Vercel · GitHub Pages
 
-## Structure
+**AI Engineering** — Gemini & Veo · OpenAI API · Anthropic API · Multi-provider gateways · Prompt engineering · Agent tooling
+
+**Design & Marketing** — Branding · Graphic Design · Copywriting · Social Campaigns · Video & Photo Editing
+
+**Spoken** — English (fluent) · Luganda (fluent) · German (learning)
+
+---
+
+## About this site
+
+Hand-built and deliberately dependency-free — **no framework, no build step, no npm install**. One HTML file, one stylesheet, ~90 lines of vanilla JavaScript. That's a design decision, not a shortcut: hiring managers bounce off portfolios that take more than two seconds to load, and static HTML on a CDN is the fastest thing you can serve.
+
+What it does have:
+
+- **Semantic HTML** with landmarks, a skip link, visible focus rings and `prefers-reduced-motion` support
+- **JSON-LD structured data** (`Person` + `WebSite`) so search engines and AI crawlers read the CV correctly
+- **Open Graph / Twitter cards** for link previews
+- **Light and dark themes** — follows the OS, overridable with the header toggle, remembered in `localStorage`
+- **Filterable project grid** and a complete repository index table
+- `sitemap.xml`, `robots.txt` and a styled `404.html`
+
+### Structure
 
 ```
-index.html
+index.html          # the whole site
+404.html
+robots.txt
+sitemap.xml
 css/style.css
 js/script.js
 assets/img/kafeero-headshot.jpg
@@ -76,31 +91,25 @@ assets/img/kafeero-fullbody.jpg
 assets/Kafeero-Proferious-CV.pdf
 ```
 
-## Preview locally
-
-Any static server works, e.g.:
+### Run locally
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Then open http://localhost:8000
+Then open <http://localhost:8000>.
 
-## Deploy to GitHub Pages (user site)
+### Deploy
 
-This is set up for a **user site**, served at `https://Profy256.github.io`. That requires the repo to be named *exactly* `Profy256.github.io`.
+This is a **GitHub Pages user site**, served at `https://profy256.github.io` from the repo named exactly `Profy256.github.io`:
 
 ```bash
-cd /home/profy/Desktop/portfolio
-git init
 git add .
-git commit -m "Initial portfolio"
-git branch -M main
-git remote add origin https://github.com/Profy256/Profy256.github.io.git
-git push -u origin main
+git commit -m "Update portfolio"
+git push origin main
 ```
 
-Then in the repo on GitHub: **Settings → Pages → Source → Deploy from a branch → `main` / `/(root)`**. It publishes at `https://profy256.github.io` within a minute or two — no further config needed since there's no build step.
+Pages settings: **Settings → Pages → Source → Deploy from a branch → `main` / `(root)`**. No build step, so it goes live within a minute.
 
 ---
 
