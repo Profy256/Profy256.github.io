@@ -31,6 +31,7 @@ Go and Java services, Next.js and TypeScript front ends, React Native mobile, Py
 | Project | What it is | Stack | Links |
 | --- | --- | --- | --- |
 | **FindMyHome Uganda** | Multi-vendor real-estate marketplace — Go API, Next.js web, admin console, sub-admin and React Native mobile across 5 repos. | Go · Next.js · PostgreSQL · Docker · React Native | 🟢 [findmyhomeuganda.com](https://www.findmyhomeuganda.com) · [web](https://findmyhome-delta.vercel.app) · [admin](https://findmyhome-admin.vercel.app) |
+| **Campus Library** | Pay-per-download academic e-book library — SSR catalog, admin panel, Express API and Prisma schema in one TypeScript monorepo, with MTN/Airtel mobile-money checkout. | TypeScript · Next.js · Express · Prisma · PostgreSQL · R2 | 🟢 [campuslibrary.xyz](https://www.campuslibrary.xyz) · [admin](https://admin.campuslibrary.xyz) |
 | **Palius** | Desktop AI platform running a whole social-media presence from one dashboard. Multi-provider AI routing. | Go · TypeScript · Next.js · Docker | [Source](https://github.com/Profy256/Palius) |
 | **KP-WhatsApp** | Multi-tenant WhatsApp automation SaaS — QR onboarding, per-tenant AI config, packages and referrals. | TypeScript · Prisma · PostgreSQL · Docker | 🟢 [Live](https://kp-whatsapp-frontend.vercel.app) · [Source](https://github.com/Profy256/KP-WHATSAPP) |
 | **Katafa Soccer Predictions** | AI soccer prediction platform with scheduled model runs and its own CI pipeline. | Go · PL/pgSQL · Next.js · GitHub Actions | [Source](https://github.com/Profy256/katafasoccerpredictions) |
